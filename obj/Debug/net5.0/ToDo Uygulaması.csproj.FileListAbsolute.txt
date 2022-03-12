@@ -1,0 +1,16 @@
+C:\Users\muhar\Desktop\ToDo Uygulaması\bin\Debug\net5.0\ToDo Uygulaması.exe
+C:\Users\muhar\Desktop\ToDo Uygulaması\bin\Debug\net5.0\ToDo Uygulaması.deps.json
+C:\Users\muhar\Desktop\ToDo Uygulaması\bin\Debug\net5.0\ToDo Uygulaması.runtimeconfig.json
+C:\Users\muhar\Desktop\ToDo Uygulaması\bin\Debug\net5.0\ToDo Uygulaması.runtimeconfig.dev.json
+C:\Users\muhar\Desktop\ToDo Uygulaması\bin\Debug\net5.0\ToDo Uygulaması.dll
+C:\Users\muhar\Desktop\ToDo Uygulaması\bin\Debug\net5.0\ref\ToDo Uygulaması.dll
+C:\Users\muhar\Desktop\ToDo Uygulaması\bin\Debug\net5.0\ToDo Uygulaması.pdb
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ToDo Uygulaması.csproj.AssemblyReference.cache
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ToDo Uygulaması.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ToDo Uygulaması.AssemblyInfoInputs.cache
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ToDo Uygulaması.AssemblyInfo.cs
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ToDo Uygulaması.csproj.CoreCompileInputs.cache
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ToDo Uygulaması.dll
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ref\ToDo Uygulaması.dll
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ToDo Uygulaması.pdb
+C:\Users\muhar\Desktop\ToDo Uygulaması\obj\Debug\net5.0\ToDo Uygulaması.genruntimeconfig.cache
