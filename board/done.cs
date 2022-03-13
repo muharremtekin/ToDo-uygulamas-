@@ -3,6 +3,6 @@ namespace ToDo_Uygulaması
 {
     public static class done
     {
-        public static List<Board> duty = new List<Board>();
+        public static List<Board> duty3 = new List<Board>();
     }
 }

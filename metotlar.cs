@@ -4,6 +4,15 @@ namespace ToDo_Uygulaması
 {
     public static class metotlar
     {
+        public static void startPrint()
+        {
+            Console.WriteLine(" Lütfen yapmak istediğiniz işlemi seçiniz :) ");
+            Console.WriteLine("********************************************");
+            Console.WriteLine("(1) Board Listelemek");
+            Console.WriteLine("(2) Board'a Kart Eklemek");
+            Console.WriteLine("(3) Board'dan Kart Silmek");
+            Console.WriteLine("(4) Kart Taşımak");
+        }
         enum Sizes
         {
             XS = 1, S, M, L, XL
@@ -18,7 +27,8 @@ namespace ToDo_Uygulaması
             byte sizeIndex = byte.Parse(Console.ReadLine());
             Console.Write("Kişi seçiniz: ");
             byte memberIndex = byte.Parse(Console.ReadLine());
-            ToDo.duty.Add(new Board(baslik, icerik, opSize(sizeIndex), memberSelect(memberIndex)));
+            ToDo.duty1.Add(new Board(baslik, icerik, opSize(sizeIndex), memberSelect(memberIndex)));
+            
         }
 
         //görev boyutunu bulur.
@@ -98,21 +108,21 @@ namespace ToDo_Uygulaması
 
                                 if (lineSelect == 1)
                                 {
-                                    ToDo.duty.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
+                                    ToDo.duty1.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
                                     item.Value.Remove(item2);
                                     control = true;
                                     break;
                                 }
                                 else if (lineSelect == 2)
                                 {
-                                    InProgress.duty.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
+                                    InProgress.duty2.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
                                     item.Value.Remove(item2);
                                     control = true;
                                     break;
                                 }
                                 else if (lineSelect == 3)
                                 {
-                                    done.duty.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
+                                    done.duty3.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
                                     item.Value.Remove(item2);
                                     control = true;
                                     break;

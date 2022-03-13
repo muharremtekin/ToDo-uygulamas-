@@ -3,6 +3,6 @@ namespace ToDo_Uygulaması
 {
     public static class InProgress
     {
-        public static List<Board> duty = new List<Board>();
+        public static List<Board> duty2 = new List<Board>();
     }
 }
