@@ -54,7 +54,7 @@ namespace ToDo_Uygulaması
                         {
                             Console.WriteLine("Kart bulundu, siliniyor...");
                             item.Value.Remove(item2);
-                            control=true;
+                            control = true;
                             break;
                         }
                     }
@@ -69,8 +69,74 @@ namespace ToDo_Uygulaması
                     check = byte.Parse(Console.ReadLine());
                     if (check == 1)
                     {
-                        control=false;
+                        control = false;
                     }
+                }
+            }
+        }
+        //Kart taşıma
+        public static void moveCard()
+        {
+            bool control = false;
+            while (control == false)
+            {
+                Console.WriteLine("Öncelikle taşımak istediğiniz kartı seçmeniz gerekiyor.");
+                Console.WriteLine("Lütfen kart başlığını yazınız:");
+                string baslik = Console.ReadLine();
+                foreach (var item in BoardDictionary.BoardDicList)
+                {
+                    if (control == false)
+                    {
+                        foreach (var item2 in item.Value)
+                        {
+                            if (item2.Baslik == baslik)
+                            {
+                                Console.WriteLine("Bulunan kar bilgileri");
+                                Console.WriteLine($"Başlık: {item2.Baslik}\nİçerik: {item2.Icerik}\nAtanan kişi: {item2.AtananKisi}\nBüyüklük: {item2.Buyukluk}\nLine: {item.Key}");
+                                Console.WriteLine("(1) TODO\n(2) IN PROGRESS\n(3) DONE");
+                                byte lineSelect = byte.Parse(Console.ReadLine());
+
+                                if (lineSelect == 1)
+                                {
+                                    ToDo.duty.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
+                                    item.Value.Remove(item2);
+                                    control = true;
+                                    break;
+                                }
+                                else if (lineSelect == 2)
+                                {
+                                    InProgress.duty.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
+                                    item.Value.Remove(item2);
+                                    control = true;
+                                    break;
+                                }
+                                else if (lineSelect == 3)
+                                {
+                                    done.duty.Add(new Board(item2.Baslik, item2.Icerik, item2.AtananKisi, item2.Buyukluk));
+                                    item.Value.Remove(item2);
+                                    control = true;
+                                    break;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Hatalı giriş, program sonlandırılıyor...");
+                                    control = true;
+                                    break;
+                                }
+                            }
+                            if (control == false)
+                                break;
+                        }
+                    }
+                }
+                if (control == false)
+                {
+                    Console.WriteLine("Aradığınız krtiterlere uygun kart board'da bulunamadı. Lütfen bir seçim yapınız.");
+                    Console.WriteLine("* Silmeyi sonlandırmak için: (1)");
+                    Console.WriteLine("* Yeniden denemek için : (2)");
+                    byte num=byte.Parse(Console.ReadLine());
+                    if(num==1)
+                        control = true;
                 }
             }
         }
